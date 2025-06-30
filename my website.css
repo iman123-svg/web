@@ -1,0 +1,282 @@
+/* Reset default browser styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body styling */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+
+/* Header */
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #5a189a;
+}
+
+
+/* Profile Card */
+
+.profile-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+}
+
+.profile-image-container img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #5a189a;
+}
+
+.profile-description {
+    max-width: 500px;
+    text-align: center;
+}
+
+
+/* Contact Section */
+
+.contact-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#contactButton {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #5a189a;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#contactButton:hover {
+    background-color: #7b2cbf;
+}
+
+#contactInfo {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #444;
+}
+
+
+/* Portfolio Section */
+
+.portfolio-section {
+    text-align: center;
+    padding: 30px;
+    background-color: #eee;
+    border-radius: 16px;
+    margin-bottom: 40px;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #5a189a;
+    color: white;
+    border-radius: 12px;
+}
+
+
+/* Hidden class */
+
+.hidden {
+    display: none;
+}
+
+
+/* Responsive */
+
+@media (max-width: 600px) {
+    .profile-card {
+        flex-direction: column;
+    }
+    .profile-image-container img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #5a189a;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #7b2cbf;
+}
+
+
+/* Highlights Page Layout */
+
+.highlights-section {
+    text-align: center;
+    padding: 40px 20px;
+    margin-bottom: 40px;
+    background-color: #f0e6ff;
+    border-radius: 16px;
+}
+
+
+/* Highlight Cards Grid */
+
+.highlight-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+/* Individual Highlight Box */
+
+.highlight-box {
+    background-color: #ffffff;
+    padding: 16px 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    min-width: 220px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.highlight-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.highlight-box h5 {
+    font-size: 1rem;
+    color: #5a189a;
+    font-weight: 600;
+    margin: 0;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: #5a189a;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #7b2cbf;
+    text-decoration: underline;
+}
+
+
+/* Highlights Section (if not already included) */
+
+.highlights-section {
+    text-align: center;
+    padding: 40px 20px;
+    margin-bottom: 40px;
+    background-color: #f0e6ff;
+    border-radius: 16px;
+}
+
+.highlights-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #5a189a;
+}
+
+.highlight-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.highlight-box {
+    background-color: #ffffff;
+    padding: 16px 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    min-width: 220px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.highlight-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.highlight-box h5 {
+    font-size: 1rem;
+    color: #5a189a;
+    font-weight: 600;
+    margin: 0;
+}
+
+
+/* Back to Home Button */
+
+.back-button-container {
+    margin-top: 40px;
+}
+
+.back-button {
+    display: inline-block;
+    background-color: #5a189a;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #7b2cbf;
+}
